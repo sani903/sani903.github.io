@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sanidhya Vijayvargiya — Research Engineer at Samsung Research America working on reliable AI agents and capable small language models.">
+  <meta name="color-scheme" content="light dark">
+  <title>Sanidhya Vijayvargiya</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>(()=>{const t=localStorage.getItem('sv-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;})();</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav-row">
+      <a class="wordmark" href="index.html">Sanidhya Vijayvargiya</a>
+      <div class="nav-actions">
+        <nav aria-label="Primary navigation">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="research.html">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="cv.html">CV</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero" aria-labelledby="intro-title">
+      <aside class="profile-column">
+        <div class="portrait-wrap"><img class="portrait" src="assets/profile.jpeg" alt="Sanidhya Vijayvargiya" width="1752" height="1940"></div>
+        <div class="icon-links" aria-label="External profiles">
+          <a class="icon-link" href="mailto:sanidhyavijay903@gmail.com" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          </a>
+          <a class="icon-link" href="https://scholar.google.com/citations?user=csV4JZsAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9 12 4l10 5-10 5L2 9Z"/><path d="M6 11.2V16c2.8 2.3 9.2 2.3 12 0v-4.8"/><path d="M22 9v6"/></svg>
+          </a>
+          <a class="icon-link" href="https://github.com/sani903" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.22c-3.22.7-3.9-1.37-3.9-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.57-.29-5.27-1.29-5.27-5.73 0-1.27.45-2.3 1.19-3.11-.12-.29-.52-1.47.11-3.07 0 0 .97-.31 3.16 1.19a10.98 10.98 0 0 1 5.76 0c2.19-1.5 3.16-1.19 3.16-1.19.63 1.6.23 2.78.11 3.07.74.81 1.19 1.84 1.19 3.11 0 4.45-2.71 5.43-5.29 5.72.42.36.79 1.06.79 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/></svg>
+          </a>
+          <a class="icon-link" href="https://www.linkedin.com/in/sanidhya-vijay/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><span class="linkedin-glyph">in</span></a>
+        </div>
+      </aside>
+
+      <div class="hero-copy">
+        <h1 id="intro-title">Sanidhya Vijayvargiya</h1>
+        <p class="role">Research Engineer · Samsung Research America</p>
+        <p class="bio">I am a Research Engineer at <a href="https://research.samsung.com/sra" target="_blank" rel="noopener">Samsung Research America</a>, where I work on extending the capabilities of small language models for increasingly complex agentic workflows, with a focus on on-device settings.</p>
+        <p class="bio">I received my M.S. in Intelligent Information Systems from the <a href="https://www.lti.cs.cmu.edu/" target="_blank" rel="noopener">Language Technologies Institute at Carnegie Mellon University</a> in 2025, where I was advised by <a href="https://www.phontron.com/" target="_blank" rel="noopener">Prof. Graham Neubig</a>. Before that, I completed my B.E. in Computer Science at <a href="https://www.bits-pilani.ac.in/" target="_blank" rel="noopener">BITS Pilani</a> in 2024.</p>
+
+        <div class="research-directions">
+          <h2>Research interests</h2>
+          <dl class="direction-list">
+            <div class="direction"><dt>Modeling information requirements</dt><dd>Detecting uncertainty and understanding what information is available, missing, and required to complete a task.</dd></div>
+            <div class="direction"><dt>Agent–environment interaction</dt><dd>Improving how agents acquire and manage information through clarification, memory, and environment exploration.</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="projects-title">
+      <div class="section-title-row">
+        <h2 id="projects-title">Recent projects</h2>
+        <a class="section-link" href="publications.html">all publications →</a>
+      </div>
+      <div class="project-grid">
+        <a class="project" href="https://arxiv.org/abs/2608.10430" target="_blank" rel="noopener">
+          <h3>Specification grounding and latent critique</h3>
+          <p>Using internal model signals to detect when an agentic action is unsupported by the user specification, and translating those signals into localized feedback before execution.</p>
+          <div class="project-meta">Actionable Hallucination Detection · 2026 ↗</div>
+        </a>
+        <a class="project" href="https://arxiv.org/abs/2604.14624" target="_blank" rel="noopener">
+          <h3>Clarification for underspecified tasks</h3>
+          <p>Studying which missing details matter for task success and which questions users can realistically answer, then using those properties to train more effective clarification behavior.</p>
+          <div class="project-meta">Asking What Matters · ICML 2026 ↗</div>
+        </a>
+        <a class="project" href="https://arxiv.org/abs/2603.01203" target="_blank" rel="noopener">
+          <h3>Agent development and real-world work</h3>
+          <p>Mapping agent benchmarks to occupations and work activities to understand how well current evaluation reflects the distribution and complexity of real-world human work.</p>
+          <div class="project-meta">How Well Does Agent Development Reflect Real-World Work? · 2026 ↗</div>
+        </a>
+        <a class="project" href="https://arxiv.org/abs/2511.03728" target="_blank" rel="noopener">
+          <h3>Context management for on-device agents</h3>
+          <p>Reducing the context burden of small on-device agents through compressed conversational state, compact tool representations, and selective schema loading.</p>
+          <div class="project-meta">Efficient On-Device Agents · 2025 ↗</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="news-title">
+      <div class="section-title-row"><h2 id="news-title">News</h2></div>
+      <ul class="news-list">
+        <li><span class="news-date">Aug 2026</span><span class="news-text">Released <strong>Latent Critic</strong>, our work on translating latent grounding signals into actionable agent feedback.</span></li>
+        <li><span class="news-date">Apr 2026</span><span class="news-text"><strong>Asking What Matters</strong> was accepted to ICML 2026.</span></li>
+        <li><span class="news-date">Jan 2026</span><span class="news-text"><strong>Ambig-SWE</strong> and <strong>OpenAgentSafety</strong> were accepted to ICLR 2026.</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer><div class="shell footer-row"><span>© 2026 Sanidhya Vijayvargiya</span><span>Last updated September 2026</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

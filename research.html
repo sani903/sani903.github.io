@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Research of Sanidhya Vijayvargiya on reliable AI agents, information requirements, interaction, and evaluation.">
+  <title>Research — Sanidhya Vijayvargiya</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>(()=>{const t=localStorage.getItem('sv-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t;})();</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav-row">
+      <a class="wordmark" href="index.html">Sanidhya Vijayvargiya</a>
+      <div class="nav-actions">
+        <nav aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="research.html" aria-current="page">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="cv.html">CV</a>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle color theme"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell page-main">
+    <header class="page-title">
+      <h1>Research</h1>
+      <p>I’m interested in what happens when an agent has to act before it has the full picture. Across software-engineering and tool-use settings, my work studies how models recognize missing or unreliable information, how interaction helps them recover what they need, and how to evaluate those behaviors beyond final task success.</p>
+    </header>
+
+    <div class="research-page-grid">
+      <section class="research-topic">
+        <h2>Specification adequacy and grounding</h2>
+        <p>I have studied both whether an agent recognizes that its instructions are incomplete and whether its eventual actions are actually supported by the information it was given. <em>Ambig-SWE</em> focuses on underspecified software tasks and the role of clarification, while <em>Latent Critic</em> examines grounding at action time using internal model representations.</p>
+        <div class="thread-list">
+          <div class="thread">
+            <h3>Ambig-SWE</h3>
+            <p>Separates task completion from an agent's ability to notice missing task information, ask targeted questions, and use the resulting context.</p>
+            <a href="https://arxiv.org/abs/2502.13069" target="_blank" rel="noopener">paper ↗</a>
+          </div>
+          <div class="thread">
+            <h3>Latent Critic</h3>
+            <p>Uses model-internal signals to detect tool actions that are not grounded in the user specification and turn those signals into localized critique.</p>
+            <a href="https://arxiv.org/abs/2608.10430" target="_blank" rel="noopener">paper ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="research-topic">
+        <h2>Interaction and context</h2>
+        <p>Another part of my work looks at how agents obtain and preserve useful context during execution. Rather than treating more context as automatically better, these projects study which information is worth asking for, how agents explore large environments, and what needs to remain available over a long trajectory.</p>
+        <div class="thread-list">
+          <div class="thread">
+            <h3>Asking What Matters</h3>
+            <p>Studies clarification through two practical criteria: whether missing information matters for task success and whether a user can realistically provide it.</p>
+            <a href="https://arxiv.org/abs/2604.14624" target="_blank" rel="noopener">paper ↗</a>
+          </div>
+          <div class="thread">
+            <h3>CodeScout</h3>
+            <p>Studies code-repository exploration and how retrieval mechanisms shape the evidence an agent can discover before acting.</p>
+            <a href="https://arxiv.org/abs/2603.17829" target="_blank" rel="noopener">paper ↗</a>
+          </div>
+          <div class="thread">
+            <h3>Efficient On-Device Agents</h3>
+            <p>Reduces the context burden of small agent models through conversational state tracking, compact tool representations, and selective schema loading.</p>
+            <a href="https://arxiv.org/abs/2511.03728" target="_blank" rel="noopener">paper ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="research-topic">
+        <h2>Evaluation beyond task completion</h2>
+        <p>Task success alone can hide important differences in how an agent behaves. I have also worked on evaluations that look beyond completion rates: whether agents remain safe in open-ended interactions, and whether the tasks used to develop agents reflect the structure and diversity of real-world work.</p>
+        <div class="thread-list">
+          <div class="thread">
+            <h3>OpenAgentSafety</h3>
+            <p>Evaluates agents across multi-turn, multi-user scenarios involving browsers, code execution, messaging, files, and shells over eight safety categories.</p>
+            <a href="https://arxiv.org/abs/2507.06134" target="_blank" rel="noopener">paper ↗</a>
+          </div>
+          <div class="thread">
+            <h3>Agent development and real-world work</h3>
+            <p>Maps agent benchmarks to occupations and work activities to characterize which parts of real-world work current agent evaluation covers—and which it does not.</p>
+            <a href="https://arxiv.org/abs/2603.01203" target="_blank" rel="noopener">paper ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="research-topic">
+        <h2>Current work</h2>
+        <p>At Samsung Research America, I work on extending the capabilities of small language models for increasingly complex agentic workflows, especially under on-device resource constraints. My public work in this setting includes context-efficient agent execution and specification-grounded tool use.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="shell footer-row">
+      <a href="index.html">← home</a>
+      <span>Last updated September 2026</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
