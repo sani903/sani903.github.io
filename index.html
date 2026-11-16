@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Sanidhya Vijayvargiya — Research Engineer at Samsung Research America working on reliable AI agents and capable small language models.">
+  <meta name="description" content="Sanidhya Vijayvargiya — Research Engineer at Samsung Research America studying informational reasoning and transferable capabilities for reliable AI agents.">
   <meta name="color-scheme" content="light dark">
   <title>Sanidhya Vijayvargiya</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -47,14 +47,15 @@
       <div class="hero-copy">
         <h1 id="intro-title">Sanidhya Vijayvargiya</h1>
         <p class="role">Research Engineer · Samsung Research America</p>
-        <p class="bio">I am a Research Engineer at <a href="https://research.samsung.com/sra" target="_blank" rel="noopener">Samsung Research America</a>, where I work on extending the capabilities of small language models for increasingly complex agentic workflows, with a focus on on-device settings.</p>
+        <p class="bio">I am a Research Engineer at <a href="https://research.samsung.com/sra" target="_blank" rel="noopener">Samsung Research America</a>, where I work on reliable and capable AI agents, with a particular focus on small language models in resource-constrained settings.</p>
         <p class="bio">I received my M.S. in Intelligent Information Systems from the <a href="https://www.lti.cs.cmu.edu/" target="_blank" rel="noopener">Language Technologies Institute at Carnegie Mellon University</a> in 2025, where I was advised by <a href="https://www.phontron.com/" target="_blank" rel="noopener">Prof. Graham Neubig</a>. Before that, I completed my B.E. in Computer Science at <a href="https://www.bits-pilani.ac.in/" target="_blank" rel="noopener">BITS Pilani</a> in 2024.</p>
 
         <div class="research-directions">
           <h2>Research interests</h2>
+          <p class="research-intro">My research investigates how AI systems can learn underlying capabilities that generalize across tasks and environments. I am particularly interested in <strong>informational reasoning</strong>: how agents recognize what they need to know and strategically acquire and manage that information to act reliably.</p>
           <dl class="direction-list">
-            <div class="direction"><dt>Modeling information requirements</dt><dd>Detecting uncertainty and understanding what information is available, missing, and required to complete a task.</dd></div>
-            <div class="direction"><dt>Agent–environment interaction</dt><dd>Improving how agents acquire and manage information through clarification, memory, and environment exploration.</dd></div>
+            <div class="direction"><dt>Task informational state</dt><dd>Understanding how models represent what a task requires, what information they possess, and whether it is sufficient to act.</dd></div>
+            <div class="direction"><dt>Strategic information acquisition and management</dt><dd>Learning how agents acquire, retain, and update information through tools, memory, and interaction.</dd></div>
           </dl>
         </div>
       </div>
@@ -62,14 +63,19 @@
 
     <section class="section" aria-labelledby="projects-title">
       <div class="section-title-row">
-        <h2 id="projects-title">Recent projects</h2>
+        <h2 id="projects-title">Selected projects</h2>
         <a class="section-link" href="publications.html">all publications →</a>
       </div>
       <div class="project-grid">
         <a class="project" href="https://arxiv.org/abs/2608.10430" target="_blank" rel="noopener">
           <h3>Specification grounding and latent critique</h3>
-          <p>Using internal model signals to detect when an agentic action is unsupported by the user specification, and translating those signals into localized feedback before execution.</p>
-          <div class="project-meta">Actionable Hallucination Detection · 2026 ↗</div>
+          <p>Identifying model-internal signals of whether an agentic action is grounded in its instructions and training models to translate those signals into localized critique.</p>
+          <div class="project-meta">Actionable Hallucination Detection · NeurIPS 2026 ↗</div>
+        </a>
+        <a class="project" href="research.html#parametric-memory">
+          <h3>Learned parametric memory management</h3>
+          <p>Developing mechanisms for language models to manage user information in their parameters, learning which memories should persist, strengthen, be updated, or fade over time.</p>
+          <div class="project-meta">Ongoing research · 2026 →</div>
         </a>
         <a class="project" href="https://arxiv.org/abs/2604.14624" target="_blank" rel="noopener">
           <h3>Clarification for underspecified tasks</h3>
@@ -80,11 +86,6 @@
           <h3>Agent development and real-world work</h3>
           <p>Mapping agent benchmarks to occupations and work activities to understand how well current evaluation reflects the distribution and complexity of real-world human work.</p>
           <div class="project-meta">How Well Does Agent Development Reflect Real-World Work? · 2026 ↗</div>
-        </a>
-        <a class="project" href="https://arxiv.org/abs/2511.03728" target="_blank" rel="noopener">
-          <h3>Context management for on-device agents</h3>
-          <p>Reducing the context burden of small on-device agents through compressed conversational state, compact tool representations, and selective schema loading.</p>
-          <div class="project-meta">Efficient On-Device Agents · 2025 ↗</div>
         </a>
       </div>
     </section>
@@ -99,7 +100,7 @@
     </section>
   </main>
 
-  <footer><div class="shell footer-row"><span>© 2026 Sanidhya Vijayvargiya</span><span>Last updated September 2026</span></div></footer>
+  <footer><div class="shell footer-row"><span>© 2026 Sanidhya Vijayvargiya</span><span>Last updated November 2026</span></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
