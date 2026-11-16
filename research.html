@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Research of Sanidhya Vijayvargiya on reliable AI agents, information requirements, interaction, and evaluation.">
+  <meta name="description" content="Research of Sanidhya Vijayvargiya on informational reasoning, information acquisition and management, and reliable AI agents.">
   <title>Research — Sanidhya Vijayvargiya</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
@@ -29,13 +29,13 @@
   <main class="shell page-main">
     <header class="page-title">
       <h1>Research</h1>
-      <p>I’m interested in what happens when an agent has to act before it has the full picture. Across software-engineering and tool-use settings, my work studies how models recognize missing or unreliable information, how interaction helps them recover what they need, and how to evaluate those behaviors beyond final task success.</p>
+      <p>My long-term research goal is to understand the capabilities underlying intelligent behavior and develop learning objectives that help these capabilities generalize beyond the tasks on which they are learned. My current work primarily investigates informational reasoning: how agents represent what they know, identify what is missing, and manage information throughout a task.</p>
     </header>
 
     <div class="research-page-grid">
       <section class="research-topic">
-        <h2>Specification adequacy and grounding</h2>
-        <p>I have studied both whether an agent recognizes that its instructions are incomplete and whether its eventual actions are actually supported by the information it was given. <em>Ambig-SWE</em> focuses on underspecified software tasks and the role of clarification, while <em>Latent Critic</em> examines grounding at action time using internal model representations.</p>
+        <h2>Modeling task informational state</h2>
+        <p>Agents often proceed despite incomplete instructions or insufficient evidence, even when more information could improve their decisions. I study whether models recognize these gaps and whether their internal representations distinguish grounded from unsupported actions. I am interested in developing explicit, updatable representations of informational state that can guide reliable behavior across tasks.</p>
         <div class="thread-list">
           <div class="thread">
             <h3>Ambig-SWE</h3>
@@ -44,24 +44,29 @@
           </div>
           <div class="thread">
             <h3>Latent Critic</h3>
-            <p>Uses model-internal signals to detect tool actions that are not grounded in the user specification and turn those signals into localized critique.</p>
+            <p>Studies whether model-internal representations encode the grounding of proposed tool actions, and trains models to turn these signals into localized critique before execution.</p>
             <a href="https://arxiv.org/abs/2608.10430" target="_blank" rel="noopener">paper ↗</a>
           </div>
         </div>
       </section>
 
       <section class="research-topic">
-        <h2>Interaction and context</h2>
-        <p>Another part of my work looks at how agents obtain and preserve useful context during execution. Rather than treating more context as automatically better, these projects study which information is worth asking for, how agents explore large environments, and what needs to remain available over a long trajectory.</p>
+        <h2>Strategic information acquisition and management</h2>
+        <p>Recognizing an informational gap is only useful if an agent can resolve it. My work studies both how agents seek useful information and how information sources make it available. I am particularly interested in learning strategies that account for the utility and cost of information rather than simply maximizing available context.</p>
         <div class="thread-list">
+          <div class="thread" id="parametric-memory">
+            <h3>Learned parametric memory management</h3>
+            <p>Explores how language models can selectively retain, reinforce, revise, or forget user information in their parameters, combining learned memory policies with mechanisms for controlled persistence and decay.</p>
+            <span class="thread-status">Ongoing research</span>
+          </div>
           <div class="thread">
             <h3>Asking What Matters</h3>
-            <p>Studies clarification through two practical criteria: whether missing information matters for task success and whether a user can realistically provide it.</p>
+            <p>Identifies which missing information matters for task success and which questions users can realistically answer, then uses these criteria as learning objectives for clarification.</p>
             <a href="https://arxiv.org/abs/2604.14624" target="_blank" rel="noopener">paper ↗</a>
           </div>
           <div class="thread">
             <h3>CodeScout</h3>
-            <p>Studies code-repository exploration and how retrieval mechanisms shape the evidence an agent can discover before acting.</p>
+            <p>Studies how exploration mechanisms shape the evidence an agent can discover in a code repository, and how reinforcement learning can improve code search.</p>
             <a href="https://arxiv.org/abs/2603.17829" target="_blank" rel="noopener">paper ↗</a>
           </div>
           <div class="thread">
@@ -74,7 +79,7 @@
 
       <section class="research-topic">
         <h2>Evaluation beyond task completion</h2>
-        <p>Task success alone can hide important differences in how an agent behaves. I have also worked on evaluations that look beyond completion rates: whether agents remain safe in open-ended interactions, and whether the tasks used to develop agents reflect the structure and diversity of real-world work.</p>
+        <p>Task success alone can hide important differences in how an agent behaves or which capabilities it actually possesses. I have worked on evaluations that examine whether agents remain safe in open-ended interactions and whether agent benchmarks reflect the structure and diversity of real-world work. I am interested in extending this perspective to measuring underlying capabilities and their transfer across settings.</p>
         <div class="thread-list">
           <div class="thread">
             <h3>OpenAgentSafety</h3>
@@ -91,7 +96,7 @@
 
       <section class="research-topic">
         <h2>Current work</h2>
-        <p>At Samsung Research America, I work on extending the capabilities of small language models for increasingly complex agentic workflows, especially under on-device resource constraints. My public work in this setting includes context-efficient agent execution and specification-grounded tool use.</p>
+        <p>At Samsung Research America, I work on improving the capabilities and reliability of small language models for increasingly complex agentic workflows, especially under on-device resource constraints. My research includes specification-grounded tool use, context-efficient execution, and learned parametric memory management.</p>
       </section>
     </div>
   </main>
@@ -99,7 +104,7 @@
   <footer>
     <div class="shell footer-row">
       <a href="index.html">← home</a>
-      <span>Last updated September 2026</span>
+      <span>Last updated November 2026</span>
     </div>
   </footer>
   <script src="script.js"></script>
